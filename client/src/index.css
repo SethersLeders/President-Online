@@ -1,0 +1,44 @@
+.hex {
+    display: inline-block;
+    position: relative;
+    color: white;
+    text-decoration: dotted;
+    text-transform: uppercase;
+    padding: 15px 15px;
+    text-align: center;
+    clip-path: polygon(7% 0, 93% 0, 100% 50%, 93% 100%, 7% 100%, 0 50%);
+    background-color: orange;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.hex:hover {
+    background-color: orangered;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Lobby Page */
+.lobby-container {
+    max-width: 500px;
+    margin: 80px auto;
+    color: white;
+}
+.lobby-header {
+    text-align: center;
+    padding: 20px;
+    background: lightblue;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.lobby-main {
+    padding: 30px 40px;
+    background: lightblue;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.create-lobby {
+    margin-bottom: 40px;
+}
+.lobby-main label {
+    display: block;
+    margin-bottom: 5px;
+}

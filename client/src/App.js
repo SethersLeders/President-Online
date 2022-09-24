@@ -23,19 +23,23 @@ function App() {
       <div class='lobby-container'>
         <header class='lobby-header'>
           <h1>President Online</h1>
-          <p>Project by Seth Ledezma</p>
         </header>
         <main class='lobby-main'>
+          <div>
+            <a class='create-lobby hex'>Create <br></br> Lobby</a>
+          </div>
           <form>
             <div class='form-control'>
-              <button class='create-lobby'>Create Lobby</button>
+                <label for='lobby-id'>Join Lobby</label>
+                <input type='text' name='join lobby' id='lobby-id' placeholder='Enter join code...'/>
+                <button>Join</button>
             </div>
           </form>
         </main>
       </div>
 
 
-      <input 
+      {/* <input 
         placeholder='type message here...' 
         onChange={(event) => {
           setMessage(event.target.value);
@@ -43,7 +47,7 @@ function App() {
       />
       <button onClick={sendMessage}>Send Message</button>
       <h1>Message:</h1>
-      { messageReceived }
+      { messageReceived } */}
     </div>
   );
 }
