@@ -21,6 +21,12 @@ io.on('connection', (socket) => {
         console.log(data);
         socket.broadcast.emit('receive_message', data);
     })
+
+    socket.on('request_lobby', () => { console.log('Change route to create-lobby') });
+
+    socket.on('find_lobby', (lobbyId) => {
+        console.log('=============================\n', lobbyId);
+    });
 });
 
 const PORT = 3001 || process.env.PORT;
