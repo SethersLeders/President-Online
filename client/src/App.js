@@ -45,7 +45,7 @@ function App() {
               </div>
               <Form action='/game-lobby'>
                 <div className='form-control'>
-                    <label for='lobby-id'>Join Lobby</label>
+                    <label htmlFor='lobby-id'>Join Lobby</label>
                     <input 
                       type='text'  
                       id='lobby-id' 
