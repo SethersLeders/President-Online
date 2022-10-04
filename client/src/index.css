@@ -25,13 +25,13 @@
 .lobby-header {
     text-align: center;
     padding: 20px;
-    background: lightblue;
+    background: #6a6a6a;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
 .lobby-main {
     padding: 30px 40px;
-    background: lightblue;
+    background: #6a6a6a;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }

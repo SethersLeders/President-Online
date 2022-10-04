@@ -1,7 +1,8 @@
 import './App.css';
 import io from 'socket.io-client';
 import { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Link, Route, Routes, Form } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
+import Form from './components/Form';
 
 const socket = io.connect('http://localhost:3001');
 
@@ -36,27 +37,10 @@ function App() {
         element={
           <div className='App'>
           <div className='lobby-container'>
-            <header className='lobby-header'>
-              <h1>President Online</h1>
-            </header>
             <main className='lobby-main'>
               <div>
-                <Link className='create-lobby hex' to='/create-lobby'>Create <br></br> Lobby</Link>
               </div>
-              <Form action='/game-lobby'>
-                <div className='form-control'>
-                    <label htmlFor='lobby-id'>Join Lobby</label>
-                    <input 
-                      type='text'  
-                      id='lobby-id' 
-                      placeholder='Enter join code...' 
-                      onChange={(event) => {
-                        setLobbyId(event.target.value);
-                      }}
-                    />
-                    <button type='submit' onClick={findLobby}>Join</button>
-                </div>
-              </Form>
+              <Form />
             </main>
           </div>
         </div>
@@ -74,6 +58,15 @@ function App() {
           <div>
             <h1>Welcome to the lobby!</h1>
             <h3>Lobby ID: {lobbyId}</h3>
+          </div>
+        }
+      >
+      </Route>
+      <Route
+        path='/create-lobby' 
+        element={
+          <div>
+            <h1>Create Lobby</h1>
           </div>
         }
       >
