@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import LobbyLink from './LobbyLink';
 
 function Form() {
     const [page, setPage] = useState(0);
@@ -24,13 +25,7 @@ function Form() {
                     </button>
                 </div>
                 <div className='footer'>
-                    <Link 
-                        hidden={page == 1} 
-                        className='create-lobby hex' 
-                        to='/game-lobby'
-                    >
-                        Join <br></br> Lobby
-                    </Link>
+                    <LobbyLink page={page} serverId={1234} display={`Join ${<br></br>} Lobby`} />
                 </div>
             </div>
         </div>
