@@ -25,7 +25,7 @@ function Form() {
                     </button>
                 </div>
                 <div className='footer'>
-                    <LobbyLink page={page} serverId={1234} display={`Join ${<br></br>} Lobby`} />
+                    <LobbyLink page={page} serverId={1234} display={`Join\nLobby`} />
                 </div>
             </div>
         </div>

@@ -9,11 +9,11 @@
     clip-path: polygon(7% 0, 93% 0, 100% 50%, 93% 100%, 7% 100%, 0 50%);
     background-color: orange;
     font-family: Helvetica, Arial, sans-serif;
+    user-select: none;
+    cursor: pointer;
 }
 .hex:hover {
     background-color: orangered;
-    cursor: pointer;
-    user-select: none;
 }
 
 /* Lobby Page */
@@ -25,15 +25,15 @@
 .lobby-header {
     text-align: center;
     padding: 20px;
-    background: #6a6a6a;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+
 }
 .lobby-main {
     padding: 30px 40px;
     background: #6a6a6a;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 .create-lobby {
     margin-bottom: 40px;
@@ -41,4 +41,23 @@
 .lobby-main label {
     display: block;
     margin-bottom: 5px;
+}
+
+button {
+    border-radius: 25px;
+    padding: 15px;
+    background-color: orange;
+    border-color: orangered;
+    border-style: inset;
+    border-width: 10px; 
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: larger;
+    user-select: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: orangered;
+    border-color: darkred;
 }
