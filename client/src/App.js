@@ -48,7 +48,7 @@ function App() {
       >
       </Route>
       <Route
-        path='/game-lobby'
+        path={'/game-lobby/' + lobbyId}
         loader={async ({ request }) => {
           let url = new URL(request.url);
           let lobbyId = url.searchParams.get('q');
@@ -58,15 +58,6 @@ function App() {
           <div>
             <h1>Welcome to the lobby!</h1>
             <h3>Lobby ID: {lobbyId}</h3>
-          </div>
-        }
-      >
-      </Route>
-      <Route
-        path='/create-lobby' 
-        element={
-          <div>
-            <h1>Create Lobby</h1>
           </div>
         }
       >

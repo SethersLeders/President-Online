@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import LobbyLink from './LobbyLink';
+import Slider from './Slider/Slider.js'
 
 function Form() {
     const [page, setPage] = useState(0);
@@ -23,6 +24,9 @@ function Form() {
                     >
                         Create <br></br>Lobby
                     </button>
+                        <Slider
+                            page={page}
+                        ></Slider>
                 </div>
                 <div className='footer'>
                     <LobbyLink page={page} serverId={1234} display={`Join\nLobby`} />

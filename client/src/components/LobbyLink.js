@@ -10,8 +10,7 @@ function LobbyLink(props) {
         <Link 
             hidden={page == 1} 
             className='create-lobby hex' 
-            // to='/game-lobby'
-            to={`/game-lobby` + serverId}
+            to={`/game-lobby/` + serverId}
         >
             {display}
         </Link>
